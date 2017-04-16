@@ -1,2 +1,21 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<h1>listing all articles</h1>
+
+<p><%= link_to "Create a new article", new_article_path %></p>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+    </tr>
+
+    <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.title %></td>
+          <td><%= article.description %></td>
+          <td><%= link_to "Edit", edit_article_path(article) %> </td>
+          <td><%= link_to "Show", article_path(article) %> </td>
+        </tr>
+    <% end %>
+</table>
+
+
