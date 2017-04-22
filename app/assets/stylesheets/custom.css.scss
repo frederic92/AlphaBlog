@@ -58,7 +58,7 @@ footer ul li {
     margin-left: 15px;
 }
 
-.navbar .navbar-collapse ul li a {
+.navbar .navbar-collapse ul li a, .navbar .navbar-collapse ul li a:hover {
     color: #fff;
 }
 
@@ -81,6 +81,17 @@ footer ul li {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.article-title a:visited, .article-title a:hover {
+    color: #337ab7;
+    text-decoration: none;
+    background: transparent;
+}
+
+.article-actions a.btn-primary, .article-actions a.btn-danger {
+    color: #fff;
+}
+
 
 
 
